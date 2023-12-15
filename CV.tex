@@ -1,0 +1,118 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{letterpaper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+\pagestyle{fancy} % Enable headers
+\renewcommand{\headrulewidth}{0pt} % Remove header rule
+\fancyhead{} % Clear header
+\fancyhead[L]{\textit{John Doe}}
+\fancyhead[R]{\textit{\# month \#year}}
+\thispagestyle{empty} % Remove header from the first page
+
+% Begin document
+\begin{document}
+
+% Header
+\begin{flushleft}
+    \textbf{\LARGE Aarush Sinha}\\[2pt] % Name
+    Chennai, India \\
+    \href{mailto:aarush.sinha@gmail.com}{aarush.sinha@gmail.com} | \href{https://www.linkedin.com/in/asj10/}{LinkedIn} | \href{https://github.com/chungimungi}{GitHub} % Contact info
+\end{flushleft}
+
+% Education Section
+\section*{RESEARCH INTERESTS}
+\noindent
+Natural Language Processing, Information Retrieval, QA-Systems
+
+% Education Section
+\section*{EDUCATION}
+\noindent
+\textbf{Vellore Institute of Technology}, Chennai, India \hfill Sep 2021 | Jun 2025\\ % University name and location
+Bachelor of Technology in Computer Science and Engineering \hfill Cumulative GPA: 3.26/4.00 \\
+\begin{itemize}
+    \item Member of IEEE Computer Science Society.
+    \item Member of IEEE RAS.
+    \item Part of the college newsletter editorial team.
+    \item Part of the university design team.
+\end{itemize}
+
+\noindent
+\textbf{Kendriya Vidyala, IIT Madras}, Chennai, India \hfill Aug 2016 | May 2021\\ % University name and location
+Schooling \hfill Final Grade: 93.8 % Degree and GPA
+
+% Academic Experience Section
+\section*{ACADEMIC EXPERIENCE}
+\noindent
+\textbf{Indian Institute if Technology Madras} \hfill Chennai, India\\ % Company name and location
+\textit{Research Intern} \hfill Aug 2023 | Present % Position and duration
+
+Working on implementing generative pseudo labelling for the retrieval of scientific literature by synthetically generating queries. This research is being done under Prof. Nirav Bhatt.
+
+\noindent
+\textbf{Olam} \hfill Chennai, India\\ % Company name and location
+\textit{Intern} \hfill Jun 2022 | Oct 2022 % Position and duration
+
+Worked with the security team of the company to build a web app for generating weekly user reports.
+
+% Projects Section
+\section*{PROJECTS}
+\noindent
+\textbf{Generation-of-Colors-using-BiLSTMs} \href{https://github.com/chungimungi/Generation-of-Colors-using-BiLSTMs}{GitHub}
+
+A prompt-based model trained to generate colors.
+
+\noindent
+\textbf{Predicting-Diseases} \href{https://github.com/chungimungi/Predicting_Diseases}{GitHub}
+
+A custom cross encoder used to predict diseases based on the input of symptoms a user describes in natural language.
+
+\noindent
+\textbf{BiGATOR} \href{https://github.com/chungimungi/BiGATOR}{GitHub}
+
+An Attention-seeking Gated BiEncoder evaluated and trained on the Lambada dataset.
+
+% Publications Section
+\section*{PUBLICATIONS}
+\noindent
+\textbf{Arxiv}\\
+Sinha, A. "Generation Of Colors using Bidirectional Long Short Term Memory Networks." arXiv, 11 Nov. 2023, doi:10.48550/arXiv.2311.06542.
+
+% Courses Section
+\section*{COURSES}
+\begin{itemize}
+    \item \textbf{Natural Language Processing with Attention Models}
+    \href{https://www.coursera.org/account/accomplishments/certificate/V3WGDV276MN3}{Certificate}
+
+    \item \textbf{Natural Language Processing with Classification and Vector Spaces}
+    \href{https://www.coursera.org/account/accomplishments/certificate/5TYQZQ95QMC2}{Certificate}
+
+    \item \textbf{Mathematics for Machine Learning: Linear Algebra}
+    \href{https://www.coursera.org/account/accomplishments/certificate/KPHRWM5J3BZP}{Certificate}
+
+    \item \textbf{Natural Language Processing in TensorFlow}
+    \href{https://www.coursera.org/account/accomplishments/verify/XQ3U9NY2BUKA}{Certificate}
+\end{itemize}
+
+% Skills Section
+\section*{SKILLS}
+\begin{itemize}
+    \item \textbf{Programming:} Python, C, Pytorch, Tensorflow, NLP, Machine Learning, Latex
+    \item \textbf{Software:} Windows, Linux
+    \item \textbf{Soft Skills:} Research, Teamwork, Time Management, Communication
+\end{itemize}
+
+% End document
+\end{document}
