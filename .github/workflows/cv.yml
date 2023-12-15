@@ -1,0 +1,23 @@
+name: Build LaTeX document
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: CV.tex
+      - name: list files
+        run: ls -r ${{ github.workspace }}
+      - name: Download CV
+        uses: actions/download-artifact@v2.1.1
+        with:
+          name: CV
+          path: CV.pdf
