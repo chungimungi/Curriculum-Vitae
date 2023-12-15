@@ -16,8 +16,8 @@ jobs:
           root_file: CV.tex
       - name: list files
         run: ls -r ${{ github.workspace }}
-      - name: Download CV
-        uses: actions/download-artifact@v2.1.1
+      - name: Upload CV
+        uses: actions/upload-artifact@v2
         with:
           name: CV
-          path: ${{ github.workspace }}/CV.pdf
+          path: CV.pdf
